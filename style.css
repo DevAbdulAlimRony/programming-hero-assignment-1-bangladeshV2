@@ -1,13 +1,20 @@
 /* Reset Default CSS */
-*{
+/* *{
     margin: 0;
     padding: 0;
+} */
+button{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 /* Body */
 body{
     padding: 30px 6%;
     background-color: #F5F5F5;
+    color: #0E0E0E;
     font-family: "Fira Sans", system-ui;
 }
 
@@ -28,12 +35,6 @@ body{
 /* Colors */
 .bg-main{
     background-color: #C6E4D6;
-}
-.text-main{
-    color: #0E0E0E;
-}
-.text-secondary{
-    color: #0E0E0E80;
 }
 
 /* borders */
@@ -87,6 +88,11 @@ body{
     font-weight: 700;
 }
 
+/* Spacing */
+.p-32{
+    padding: 32px;
+}
+
 /* Hover */
 .hoverable{
     transition: all 0.3 ease;
@@ -99,13 +105,50 @@ body{
 #banner-section{
     padding: 80px 100px;
 }
-#banner-section .banner_hero-title {
-   gap: 24px;
-}
 #banner-section .banner_hero-title{
     line-height: 67.2px;
 }
 #banner-section .banner_hero-img img{
     height: 400px;
     max-width: 100%;
+}
+
+/* Vision Section */
+#vision-section .vision_cards-card-1{
+    background-color: rgba(84, 144, 245, 0.2);
+}
+#vision-section .vision_cards-card-2{
+    background-color: rgba(198, 228, 214, 1);
+}
+#vision-section .vision_cards-card-3{
+    background-color: rgba(247, 235, 207, 1);
+}
+#vision-section img{
+    width: 62px;
+    height: 62px;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+#vision-section button{
+    padding: 11px 20px;
+    font-size: 16px;
+}
+#vision-section .vision_cards-btn-1{
+    background-color: #5490F5;
+}
+#vision-section .vision_cards-btn-2{
+    background-color: #09A15C;
+}
+#vision-section .vision_cards-btn-3{
+    background-color: #FFC239;
+}
+
+/* Quote Section */
+#quote-section{
+    padding: 48px 24px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background-color: #FFFFFF;
+    background-image: url('assets/quote-bg.png');
+    background-position: 24px 48px;
+    background-repeat: no-repeat;
 }
