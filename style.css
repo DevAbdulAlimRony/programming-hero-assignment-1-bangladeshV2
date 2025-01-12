@@ -6,7 +6,7 @@
 
 /* Body */
 body{
-    padding: 80px 100px;
+    padding: 80px 6.25%;
     background-color: #F5F5F5;
 }
 
@@ -65,4 +65,12 @@ body{
 }
 .fw-700{
     font-weight: 700;
+}
+
+/* Hover */
+.hoverable{
+    transition: all 0.3 ease;
+}
+.hoverable:hover{
+    opacity: 0.6;
 }
