@@ -1,13 +1,18 @@
 /* Reset Default CSS */
-/* *{
+*{
     margin: 0;
     padding: 0;
-} */
+}
 button{
     background: none;
     border: none;
     outline: none;
     box-shadow: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+button:hover{
+    opacity: 0.6;
 }
 
 /* Body */
@@ -27,6 +32,7 @@ body{
 .flex-col{
     display: flex;
     flex-direction: column;
+    gap: 1;
 }
 .text-center{
     text-align: center;
@@ -35,6 +41,9 @@ body{
 /* Colors */
 .bg-main{
     background-color: #C6E4D6;
+}
+.text-grey-7{
+    color: rgba(14, 14, 14, 0.7);
 }
 
 /* borders */
@@ -50,7 +59,6 @@ body{
 
 /* buttons */
 .btn{
-    height: 56px;
     padding: 17px 34px;
     background-color: #006A50;
     color: #FFFFFF;
@@ -78,6 +86,9 @@ body{
 .font-16{
     font-size: 16px;
 }
+.font-32{
+    font-size: 32px;
+}
 .weight-400{
     font-weight: 400px;
 }
@@ -92,13 +103,8 @@ body{
 .p-32{
     padding: 32px;
 }
-
-/* Hover */
-.hoverable{
-    transition: all 0.3 ease;
-}
-.hoverable:hover{
-    opacity: 0.6;
+.margin-right-1{
+    margin-right: 1;
 }
 
 /* Banner Section */
@@ -151,4 +157,40 @@ body{
     background-image: url('assets/quote-bg.png');
     background-position: 24px 48px;
     background-repeat: no-repeat;
+}
+
+/* News section */
+#news-section .news-section_card{
+    padding: 48px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+#news-section .news-section_satelite-img{
+    width: 100%;
+    height: 306px;
+}
+#news-section .news-section_content img{
+    max-width: 100%;
+    height: 40px;
+}
+#news-section button{
+    padding: 13px 26px;
+}
+
+/* Donation Section */
+#donate-section .donate_cards-card{
+    background-color: #FFFFFF;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    padding: 40px;
+}
+#donate-section .donate_cards-card.donate_cards-active--card{
+    background-color: rgba(198, 228, 214, 1);
+}
+#donate-section input{
+    height: 64px;
+    padding: 20px 40px;
+    margin: 3px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(14, 14, 14, 0.15);
 }

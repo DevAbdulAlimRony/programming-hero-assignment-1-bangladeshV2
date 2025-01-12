@@ -20,7 +20,7 @@
         <div class="banner_hero-title">
             <h1 class="font-24 weight-500">Bangladesh 2.0</h1>
             <h2 class="font-56 weight-700">Idea , innovation ,vision and challenges in New Bangladesh.</h2>
-            <button class="btn">Explore New Bangladesh</button>
+            <button class="btn" type="submit">Explore New Bangladesh</button>
         </div>
 
         <!-- Hero Image -->
@@ -40,7 +40,7 @@
             <img src="./assets/card-icon.png" alt="idea bulb">
             <h4 class="font-20 weight-700">Digital Transformation</h4>
             <p class="ont-16 weight-400">Creating a nationwide digital ecosystem to enhance connectivity and access to services for all citizens.</p>
-            <button class="btn vision_cards-btn-1">Learn More</button>
+            <button class="btn vision_cards-btn-1" type="submit">Learn More</button>
         </div>
         <div class="vision_cards-card-2 p-32 radius-16">
             <img src="./assets/card-icon.png" alt="idea bulb">
@@ -52,7 +52,7 @@
             <img src="./assets/card-icon.png" alt="idea bulb">
             <h4 class="font-20 weight-700">Digital Transformation</h4>
             <p class="font-16 weight-400">Creating a nationwide digital ecosystem to enhance connectivity and access to services for all citizens.</p>
-            <button class="btn vision_cards-btn-3">Learn More</button>
+            <button class="btn vision_cards-btn-3" type="submit">Learn More</button>
         </div>
        </div>
     </section>
@@ -66,63 +66,69 @@
 
 
      <!-- === Recent News Section === -->
-     <section id="news-section">
-        <h3>Recent News</h3>
-        <p>Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.</p>
+     <section id="news-section" class="flex-col">
+        <h3 class="font-40 weight-700">Recent News</h3>
+        <p class="font-16 weight-400 text-grey-7">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.</p>
      
         <!-- News Card 1 -->
-        <div>
-            <img src="./assets/satelite.png" alt="satelite">
-            <div>
-               <h3>Bangladesh Launches New Satellite</h3>
+        <div class="news-section_card radius-24">
+            <img src="./assets/satelite.png" alt="satelite" class="radius-24" class="news-section_satelite-img">
+            <div class="news-section_content">
+               <h3 class="font-32 weight-700">Bangladesh Launches New Satellite</h3>
                <img src="./assets/al-jazeera.png" alt="logo of al jazeera">
-               <p>
-                    <span>Date: 05/01/2025</span>
-                    <span>Time: 10.25 PM</span>
-               </p> 
-               <p>
-                    Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we,
-                    with a certain degree of justification, be able to speak of humankind as civilized
-               </p>
-               <button>Read More</button>
+               <div class="font-16 weight-400 text-grey-7">
+                    <p>
+                        <span class="margin-right-1">Date: 05/01/2025</span>
+                        <span>Time: 10.25 PM</span>
+                    </p> 
+                    <p>
+                        Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we,
+                        with a certain degree of justification, be able to speak of humankind as civilized
+                    </p>
+               </div>
+               <button class="btn" type="submit">Read More</button>
             </div>
         </div>
 
         <!-- News Card 2 -->
-        <div>
-            <div>
-               <h3>Bangladesh Launches New Satellite</h3>
-               <img src="./assets/al-jazeera.png" alt="logo of al jazeera">
-               <p>
-                    <span>Date: 05/01/2025</span>
-                    <span>Time: 10.25 PM</span>
-               </p> 
-               <p>
-                    Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we,
-                    with a certain degree of justification, be able to speak of humankind as civilized
-               </p>
-               <button>Read More</button>
+        <div class="news-section_card radius-24">
+            <div class="news-section_content">
+               <h3 class="font-32 weight-700">Bangladesh Launches New Satellite</h3>
+               <img src="./assets/al-jazeera.png" alt="logo of al jazeera" class="radius-24">
+               <div class="font-16 weight-400 text-grey-7">
+                    <p>
+                        <span class="margin-right-1">Date: 05/01/2025</span>
+                        <span>Time: 10.25 PM</span>
+                    </p> 
+                    <p>
+                        Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we,
+                        with a certain degree of justification, be able to speak of humankind as civilized
+                    </p>
+               </div>
+               <button class="btn" type="submit">Read More</button>
             </div>
+        <img src="./assets/satelite.png" alt="satelite" class="news-section_satelite-img radius-24">
         </div>
-        <img src="./assets/satelite.png" alt="satelite">
     </section>
 
     <!-- === Donation Section === -->
     <section id="donate-section">
-        <h3>Donate Today</h3>
-        <p>Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure.</p>
+        <h3 class="font-40 weight-700 text-center">Donate Today</h3>
+        <p class="font-16 weight-400 text-center">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure.</p>
 
         <!-- Donation Cards -->
-        <div>
-            <div class="donate-card">100</div>
-            <div class="donate-card active-donate">200</div>
-            <div class="donate-card">500</div>
-            <div class="donate-card">1000</div>
+        <div class="donate_cards flex-center">
+            <div class="donate_cards-card radius-16">100</div>
+            <div class="donate_cards-card radius-16 donate_cards-active--card">200</div>
+            <div class="donate_cards-card radius-16">500</div>
+            <div class="donate_cards-card radius-16">1000</div>
         </div>
 
         <!-- Donate Inputs -->
-        <input type="text" placeholder="Other Amount (Taka)">
-        <button>Donate Now</button>
+        <input type="text" placeholder="Other Amount (Taka)" class="text-center">
+        <div>
+            <button class="btn" type="submit">Donate Now</button>
+        </div>
     </section>
 
     <!-- === Newsletter Section === -->
@@ -131,7 +137,7 @@
         <p>Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth.</p>
         <div>
             <input type="email" placeholder="Enter your email here">
-            <button>Subscribe</button>
+            <button type="submit">Subscribe</button>
         </div>
         <p>We promise not to spam you!</p>
     </section>
