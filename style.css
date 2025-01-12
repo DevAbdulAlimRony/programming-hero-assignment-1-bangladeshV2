@@ -6,8 +6,23 @@
 
 /* Body */
 body{
-    padding: 80px 6.25%;
+    padding: 30px 6%;
     background-color: #F5F5F5;
+    font-family: "Fira Sans", system-ui;
+}
+
+/* Centered Element */
+.flex-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
 }
 
 /* Colors */
@@ -28,6 +43,9 @@ body{
 .radius-16{
     border-radius: 16px;
 }
+.radius-24{
+    border-radius: 24px;
+}
 
 /* buttons */
 .btn{
@@ -36,6 +54,8 @@ body{
     background-color: #006A50;
     color: #FFFFFF;
     border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* Fonts */
@@ -57,13 +77,13 @@ body{
 .font-16{
     font-size: 16px;
 }
-.fw-400{
+.weight-400{
     font-weight: 400px;
 }
-.fw-500{
+.weight-500{
     font-weight: 500;
 }
-.fw-700{
+.weight-700{
     font-weight: 700;
 }
 
@@ -73,4 +93,19 @@ body{
 }
 .hoverable:hover{
     opacity: 0.6;
+}
+
+/* Banner Section */
+#banner-section{
+    padding: 80px 100px;
+}
+#banner-section .banner_hero-title {
+   gap: 24px;
+}
+#banner-section .banner_hero-title{
+    line-height: 67.2px;
+}
+#banner-section .banner_hero-img img{
+    height: 400px;
+    max-width: 100%;
 }
