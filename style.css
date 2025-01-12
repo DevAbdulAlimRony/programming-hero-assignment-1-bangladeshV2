@@ -3,55 +3,43 @@
     margin: 0;
     padding: 0;
 }
-button{
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    cursor: pointer;
-}
-button, .hoverable{
-    transition: all 0.5s ease;
-}
-button:hover, .hoverable:hover{
-    opacity: 0.6;
-}
 
 /* Body */
 body{
-    padding: 30px 6%;
-    background-color: #F5F5F5;
-    color: #0E0E0E;
     font-family: "Fira Sans", system-ui;
-}
-
-/* Centered Element */
-.flex-center{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.flex-col{
     display: flex;
     flex-direction: column;
-    gap: 1;
+    gap: 80px;
+    padding: 30px 70px;
+    background-color: #F5F5F5;
+    color: #0E0E0E;
 }
-.text-center{
-    text-align: center;
+
+p{
+    line-height: 24px;
 }
 
 /* Colors */
 .bg-main{
     background-color: #C6E4D6;
 }
+.text-grey-3{
+    color: rgba(14, 14, 14, 0.3);
+}
+.text-grey-5{
+    color: rgba(14, 14, 14, 0.5);
+}
+.text-grey-6{
+    color: rgba(14, 14, 14, 0.6);
+}
 .text-grey-7{
     color: rgba(14, 14, 14, 0.7);
 }
-
-/* borders */
-.border-1-grey{
-    border: 1px solid #0E0E0E26;
+.text-grey-8{
+    color: rgba(14, 14, 14, 0.8);
 }
+
+/* Border Radiuses */
 .radius-16{
     border-radius: 16px;
 }
@@ -59,38 +47,27 @@ body{
     border-radius: 24px;
 }
 
-/* buttons */
-.btn{
-    padding: 17px 34px;
-    background-color: #006A50;
-    color: #FFFFFF;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-/* Fonts */
-.font-fira-sans {
-  font-family: "Fira Sans", system-ui;
-}
-.font-56{
-    font-size: 56px;
-}
-.font-40{
-    font-size: 40px;
-}
-.font-24{
-    font-size: 24px;
+/* Font Sizes */
+.font-16{
+    font-size: 16px;
 }
 .font-20{
     font-size: 20px;
 }
-.font-16{
-    font-size: 16px;
+.font-24{
+    font-size: 24px;
 }
 .font-32{
     font-size: 32px;
 }
+.font-40{
+    font-size: 40px;
+}
+.font-56{
+    font-size: 56px;
+}
+
+/* Font Weights */
 .weight-400{
     font-weight: 400px;
 }
@@ -105,23 +82,75 @@ body{
 .p-32{
     padding: 32px;
 }
-.margin-right-1{
-    margin-right: 1;
+.margin-bottom-12{
+    margin-bottom: 12px;
+}
+.margin-right-5{
+    margin-right: 5px;
+}
+
+/* Button Default CSS Reset */
+button{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/* Add Hover to all Buttons */
+button{
+    transition: all 0.5s ease;
+}
+button:hover{
+    opacity: 0.3;
+}
+
+
+/* Common Classes */
+.btn{
+    padding: 17px 34px;
+    background-color: #006A50;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.text-center{
+    text-align: center;
 }
 
 /* Banner Section */
 #banner-section{
-    padding: 80px 100px;
-}
-#banner-section .banner_hero-title{
-    line-height: 67.2px;
+    padding: 80px 64px;
 }
 #banner-section .banner_hero-img img{
     height: 400px;
     max-width: 100%;
 }
+#banner-section h1{
+    margin-bottom: 16px;
+}
+#banner-section button{
+    margin-top: 24px;
+}
 
 /* Vision Section */
+#vision-section h3{
+    margin-bottom: 24px;
+}
+#vision-section .vision_cards{
+    margin: 32px 0;
+}
+#vision-section .vision_cards h4{
+    margin-bottom: 12px;
+}
 #vision-section .vision_cards-card-1{
     background-color: rgba(84, 144, 245, 0.2);
 }
@@ -132,14 +161,16 @@ body{
     background-color: rgba(247, 235, 207, 1);
 }
 #vision-section img{
-    width: 62px;
-    height: 62px;
+    width: 64px;
+    height: 64px;
     margin-top: 1px;
     margin-left: 1px;
+    margin-bottom: 24px;
 }
 #vision-section button{
     padding: 11px 20px;
     font-size: 16px;
+    margin-top: 24px;
 }
 #vision-section .vision_cards-btn-1{
     background-color: #5490F5;
@@ -157,16 +188,31 @@ body{
     border: 1px solid rgba(14, 14, 14, 0.15);
     background-color: #FFFFFF;
     background-image: url('assets/quote-bg.png');
-    background-position: 24px 48px;
+    background-size: 64px;
+    background-position: 25px 25px;
     background-repeat: no-repeat;
+}
+#quote-section p{
+    margin-bottom: 12px;
 }
 
 /* News section */
+#news-section .news-section_card-1{
+    margin-bottom: 24px;
+}
+#news-section button{
+    margin-top: 32px;
+}
+#news-section .news-section_title{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
 #news-section .news-section_card{
     padding: 48px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    gap: 32px;
 }
 #news-section .news-section_satelite-img{
     width: 100%;
@@ -181,37 +227,62 @@ body{
 }
 
 /* Donation Section */
+#donate-section{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 48px;
+}
+#donate-section .donate-btn{
+    align-self: center;
+}
+#donate-section .donate_cards{
+    gap: 24px;
+    justify-content: space-between;
+}
 #donate-section .donate_cards-card{
+    width: 240px;
     background-color: #FFFFFF;
     border: 1px solid rgba(14, 14, 14, 0.15);
     padding: 40px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+#donate-section .donate_cards-card:hover, #donate-section .donate_cards-card.donate_cards-active--card:hover{
+    background-color: #006A50;
+    color: #fff;
+    cursor: pointer;
 }
 #donate-section .donate_cards-card.donate_cards-active--card{
     background-color: rgba(198, 228, 214, 1);
 }
 #donate-section input{
-    height: 64px;
+    width: 100%;
     padding: 20px 40px;
-    margin: 3px;
     background-color: #FFFFFF;
-    border: 1px solid rgba(14, 14, 14, 0.15);
+    border: none;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
 }
 
 /* Newsletter Section */
 #newletter-section{
     padding: 80px 100px;
 }
+#newletter-section h3{
+    margin-bottom: 16px;
+}
 #newletter-section .newletter_input-group{
-    width: 100%;
     height: 56px;
     display: flex;
     justify-content: center;
     gap: 0;
+    margin: 24px 0;
 }
 #newletter-section .newletter_input-group input{
+    width: 600px;
     border: none;
     border-radius: 0;
-    border-bottom: 1px;
+    border: none;
     background-color: #FFFFFF;
     padding: 18px 40px;
     border-top-left-radius: 8px;
