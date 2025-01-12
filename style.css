@@ -9,9 +9,11 @@ button{
     outline: none;
     box-shadow: none;
     cursor: pointer;
+}
+button, .hoverable{
     transition: all 0.5s ease;
 }
-button:hover{
+button:hover, .hoverable:hover{
     opacity: 0.6;
 }
 
@@ -193,4 +195,31 @@ body{
     margin: 3px;
     background-color: #FFFFFF;
     border: 1px solid rgba(14, 14, 14, 0.15);
+}
+
+/* Newsletter Section */
+#newletter-section{
+    padding: 80px 100px;
+}
+#newletter-section .newletter_input-group{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+#newletter-section .newletter_input-group input{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px;
+    background-color: #FFFFFF;
+    padding: 18px 40px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#newletter-section button{
+    padding: 17px 35px;
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
